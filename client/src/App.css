@@ -1,0 +1,158 @@
+html{
+  height:100%;
+}
+body{
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 62px;
+}
+
+.loader{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: -75px 0 0 -75px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.loading-indicator{
+  text-align: center
+}
+
+header{
+  background-color: #2bb5fd;
+  color: #fff;
+}
+header .main-header{
+  color: #fff;
+  padding: 13px 0;
+}
+header .main-header .left-header{
+
+}
+
+header .main-header .right-header{
+  text-align: right;
+}
+header .main-header .right-header div{
+cursor: pointer;
+}
+header .sub-header{
+  text-align: center;
+  padding: 6px 0;
+}
+header .sub-header button{
+  background: none;
+  border: 0;
+  color: #fff;
+}
+
+footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #2bb5fd;
+  color: #fff; 
+}
+footer .footer-wrapper .footer-icon{
+cursor: pointer;
+}
+footer .footer-wrapper .left-footer .footer-icon{
+  margin-left: 7px;
+
+}
+footer .footer-wrapper .right-footer .footer-icon{
+  margin-right: 30px;
+}
+footer .footer-wrapper .left-footer{
+
+}
+footer .footer-wrapper .middle-footer{
+  text-align: center;
+}
+footer .footer-wrapper .right-footer{
+  text-align: right;
+}
+
+.dashboard-container{
+  padding: 40px 0;
+}
+
+.dashboard-container .blockss:first-child{
+  display: none;
+}
+
+.dashboard-container .dashboard-block{
+  padding: 10px 25px 12px 13px;
+  border: 3px solid #d4d4d4;
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+.dashboard-container .dashboard-block h5{
+  color: #828282;
+  margin-bottom: 6px;
+}
+.dashboard-container .dashboard-block .progress{
+  height: 15px !important;
+    margin-bottom: 5px !important;
+}
+.dashboard-container .dashboard-block p{
+  color: #828282;
+}
+.dashboard-container .dashboard-block p span{
+  font-size: 30px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 22px;
+  cursor: pointer;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.bg-bgamber{
+  background-color: #F5B31F !important;
+}
+
+.bg-bgred{
+  background-color: #FF5C5C !important;
+}
+.bg-bggreen{
+  background-color: #62DDA9 !important;
+}
