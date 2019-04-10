@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
     "express": "^4.16.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -19,7 +20,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "cd client && react-scripts test --env=jsdom",
-    "client": "cd client && react-scripts start",
+    "client": "cd client && cross-env PORT=3006 react-scripts start",
     "build": "cd client && react-scripts build",
     "server": "cd server && node server.js"
   },

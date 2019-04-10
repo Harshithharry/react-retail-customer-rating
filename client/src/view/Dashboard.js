@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {bindActionCreators} from 'redux';
 // import { dispatch } from 'react-redux';
 import { Container } from 'reactstrap';
 
@@ -31,12 +32,16 @@ class Dashboard extends Component {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    fetchData: () => dispatch(fetchData())
-  }
-};
+// function mapDispatchToProps(dispatch) {
+//   return {
+//     fetchData: () => dispatch(fetchData())
+//   }
+// };
 
+// After adding bindActionCreator, simplified verion 
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({fetchData}, dispatch)
+};
 
 
 
