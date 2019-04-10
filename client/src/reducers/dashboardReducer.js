@@ -16,7 +16,7 @@ export default (state = {}, action) => {
        return { 
          ...state,
          loading: false,  
-         json: action.json, 
+         json: action.payload, 
          
         };
 

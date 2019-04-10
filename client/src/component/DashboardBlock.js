@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import { Col } from 'reactstrap';
-import { Progress } from 'reactstrap';
+import { Progress, Col } from 'reactstrap';
 
 
 let DashboardBlock = ({ data, loading }) => {

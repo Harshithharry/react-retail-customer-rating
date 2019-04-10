@@ -23,6 +23,5 @@
     "build": "cd client && react-scripts build",
     "server": "cd server && node server.js"
   },
-  "author": "Giorgia",
-  "license": "ISC"
+  "author": "Harshith"
 }

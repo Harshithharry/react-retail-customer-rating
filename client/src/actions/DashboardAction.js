@@ -7,6 +7,10 @@ export const requestData = () => ({
 });
 
 
+export const receiveData = (payload) => ({
+  type: 'RECEIVE_DATA',
+  payload
+});
 
 export function fetchData() {
   return function (dispatch) {
@@ -14,16 +18,13 @@ export function fetchData() {
     return fetch(`http://localhost:3001/measures?shoppingChannel=instore`)
       .then(
         response => response.json(),
-        error => console.log('An error occurred.', error),
+        // error => console.log('An error occurred.', error),
       )
-      .then((json) => {
-        dispatch({
-          type: 'RECEIVE_DATA',
-          json: json
-        });
-        console.log(json);
-        
+      .then((response) => {
+        dispatch(receiveData(response));
       },
       );
   };
 }
+
+
